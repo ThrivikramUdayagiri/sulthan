@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sultans dine</title>
+    <link rel="icon" href="https://sultansdinebd.com/wp-content/uploads/2020/09/Artboard_1-100-removebg-preview-e1749969151428.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{ 
+            display: flex;
+            justify-content: space-around;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 60px;
+            
+        }
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        li a{
+            color: #CC5500;
+            font-family: sans-serif;
+            font-size: large;
+            text-decoration: none;
+            padding: 13px 20px 13px 20px;
+            position: relative;
+        }
+        li a::after{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            content:"";
+        }
+        li a:hover::after{
+            border: 2px solid #FFC000 ;
+        }
+        li a:hover{
+            color: #FFC000 ;
+        }
+        .findstore{
+            color: #CC5500;
+            font-family: sans-serif;
+            font-size: large;
+            padding: 13px 20px 13px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding-left: 10%;
+        }
+        .findstore:hover{
+            font-family: sans-serif;
+            font-size: large;
+            /* display: flex;
+            align-items: center;
+            justify-content: right; */
+            padding-left: 10%;
+        }
+        .findstore i{  
+            margin-right: 5px;
+        }
+        .box_hover a{
+            color: #CC5500 ;
+            border-radius: 10px;
+            padding: 6px 6px 6px 6px;
+        }
+        .box_hover a:hover{
+            color: white ;
+            background-color: #CC5500;
+        }
+        .background{
+            height: 70vh; 
+            width: 100vw; 
+            background-image:url(https://content.jdmagicbox.com/v2/comp/bangalore/p7/080pxx80.xx80.191231190028.d6p7/catalogue/platos-ramesh-nagar-bangalore-restaurants-0lwlsug6rn.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right;
+            opacity: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <a href="home.html"><img src="https://sultansdinebd.com/wp-content/uploads/2020/09/Artboard_1-100-removebg-preview-e1749969151428.png" alt="" style="width: 15vw;"></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+        </div>
+        <div class="findstore">
+            <div class="box_hover">
+                <a href="location.html" style="text-decoration: none;">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Find a store</span></a>
+            </div>
+        </div>
+        <div class="findstore">
+            <span style="padding-right: 48px;"><a href="https://play.google.com/store/apps/details?id=com.sultansdine" target="_blank" style="color: #CC5500; text-decoration: none;">Download</a></span>
+            <span>Phone No.: </span>
+            <span>63023 *****</span>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik03IDIycS0uODI1IDAtMS40MTItLjU4N1Q1IDIwdC41ODgtMS40MTJUNyAxOHQxLjQxMy41ODhUOSAyMHQtLjU4NyAxLjQxM1Q3IDIybTEwIDBxLS44MjUgMC0xLjQxMi0uNTg3VDE1IDIwdC41ODgtMS40MTJUMTcgMTh0MS40MTMuNTg4VDE5IDIwdC0uNTg3IDEuNDEzVDE3IDIyTTUuMiA0aDE0Ljc1cS41NzUgMCAuODc1LjUxM3QuMDI1IDEuMDM3bC0zLjU1IDYuNHEtLjI3NS41LS43MzcuNzc1VDE1LjU1IDEzSDguMUw3IDE1aDExcS40MjUgMCAuNzEzLjI4OFQxOSAxNnQtLjI4OC43MTNUMTggMTdIN3EtMS4xMjUgMC0xLjctLjk4N3QtLjA1LTEuOTYzTDYuNiAxMS42TDMgNEgycS0uNDI1IDAtLjcxMi0uMjg4VDEgM3QuMjg4LS43MTJUMiAyaDEuNjI1cS4yNzUgMCAuNTI1LjE1dC4zNzUuNDI1eiIvPjwvc3ZnPg==" alt="icon" width="24" height="24" >
+        </div>
+    </header>
+    
+    <section>
+        <div class="background">
+        <span style="color: white; font-weight: 600; font-family: sans-serif; font-size: xxx-large;">BEST KACCHI IN TOWN</span>
+        <button style="color: black; background-color: skyblue; padding: 10px 10px 10px 10px; border-radius: 15px; font-size: large; border-style: none;"><a href="location.html" style="color: black; text-decoration: none;">Near by Sultan's dine</a></button>
+        </div>
+
+        <div style="display: flex; justify-content: center; z-index: 10; position: absolute; top: 77.5vh; left: 48vw;">
+            <button style="color: black; background-color: skyblue; padding: 10px 10px 10px 10px; border-radius: 15px; font-size: large; border-style: none;"><a href="Menu.html" style="color: black; text-decoration: none;">Menu</a></button>
+        </div>
+
+        <div style="position: relative; display: flex; height: 15vh; width: 100vw; justify-content: space-around; padding-top: 15px;">
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2024/11/DSC03003-removebg-preview-e1730719169159.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/10-removebg-preview.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/zafrani_sarbat1_90-removebg-preview.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/1-removebg-preview.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/24-scaled-removebg-preview-e1739271667151.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/26-removebg-preview.png" alt="" height="100%" width="100%"></div>
+
+    </section>
+</body>
+</html>
