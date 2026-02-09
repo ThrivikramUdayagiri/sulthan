@@ -1,30 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ruralfood</title> 
-    <link rel="icon" href="image copy.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Sultans dine</title>
+    <link rel="icon" href="https://sultansdinebd.com/wp-content/uploads/2020/09/Artboard_1-100-removebg-preview-e1749969151428.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- <title>About a Restaurant</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFFDD0;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
+        body{
+            margin: 0px;
+            padding: 0px;
+            width: 100vw;
+            height: 100vh;
         }
         header{ 
             display: flex;
             justify-content: space-around;
-            background-color: white;
         }
-        .hi{
+        ul{
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 60px;
             
         }
         li{
@@ -66,6 +60,9 @@
         .findstore:hover{
             font-family: sans-serif;
             font-size: large;
+            /* display: flex;
+            align-items: center;
+            justify-content: right; */
             padding-left: 10%;
         }
         .findstore i{  
@@ -80,26 +77,33 @@
             color: white ;
             background-color: #CC5500;
         }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #d2691e;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        .background{
+            height: 70vh; 
+            width: 100vw; 
+            background-image:url(https://content.jdmagicbox.com/v2/comp/bangalore/p7/080pxx80.xx80.191231190028.d6p7/catalogue/platos-ramesh-nagar-bangalore-restaurants-0lwlsug6rn.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right;
+            opacity: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
         }
     </style>
+
 </head>
+
 <body>
+
     <header>
         <div style="display: flex; align-items: center; justify-content: center;">
-                        <a href="home.html"><img src="https://sultansdinebd.com/wp-content/uploads/2020/09/Artboard_1-100-removebg-preview-e1749969151428.png" alt="" style="width: 15vw;"></a>
-
+            <a href="home.html"><img src="https://sultansdinebd.com/wp-content/uploads/2020/09/Artboard_1-100-removebg-preview-e1749969151428.png" alt="" style="width: 15vw;"></a>
         </div>
         <div>
-            <ul class="hi">
+            <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
@@ -110,12 +114,11 @@
             <div class="box_hover">
                 <a href="location.html" style="text-decoration: none;">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Find a store</span>
-                </a>
+                    <span>Find a store</span></a>
             </div>
         </div>
         <div class="findstore">
-            <span style="padding-right: 37px;"><a href="https://play.google.com/store/apps/details?id=com.sultansdine" target="_blank" style="color: #CC5500; text-decoration: none;">Download</a></span>
+            <span style="padding-right: 48px;"><a href="https://play.google.com/store/apps/details?id=com.sultansdine" target="_blank" style="color: #CC5500; text-decoration: none;">Download</a></span>
             <span>Phone No.: </span>
             <span>63023 *****</span>
         </div>
@@ -123,73 +126,25 @@
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik03IDIycS0uODI1IDAtMS40MTItLjU4N1Q1IDIwdC41ODgtMS40MTJUNyAxOHQxLjQxMy41ODhUOSAyMHQtLjU4NyAxLjQxM1Q3IDIybTEwIDBxLS44MjUgMC0xLjQxMi0uNTg3VDE1IDIwdC41ODgtMS40MTJUMTcgMTh0MS40MTMuNTg4VDE5IDIwdC0uNTg3IDEuNDEzVDE3IDIyTTUuMiA0aDE0Ljc1cS41NzUgMCAuODc1LjUxM3QuMDI1IDEuMDM3bC0zLjU1IDYuNHEtLjI3NS41LS43MzcuNzc1VDE1LjU1IDEzSDguMUw3IDE1aDExcS40MjUgMCAuNzEzLjI4OFQxOSAxNnQtLjI4OC43MTNUMTggMTdIN3EtMS4xMjUgMC0xLjctLjk4N3QtLjA1LTEuOTYzTDYuNiAxMS42TDMgNEgycS0uNDI1IDAtLjcxMi0uMjg4VDEgM3QuMjg4LS43MTJUMiAyaDEuNjI1cS4yNzUgMCAuNTI1LjE1dC4zNzUuNDI1eiIvPjwvc3ZnPg==" alt="icon" width="24" height="24" >
         </div>
     </header>
+    
+    <section>
+        <div class="background">
+        <span style="color: white; font-weight: 600; font-family: sans-serif; font-size: xxx-large;">BEST KACCHI IN TOWN</span>
+        <button style="color: black; background-color: skyblue; padding: 10px 10px 10px 10px; border-radius: 15px; font-size: large; border-style: none;"><a href="location.html" style="color: black; text-decoration: none;">Near by Sultan's dine</a></button>
+        </div>
 
+        <div style="display: flex; justify-content: center; z-index: 10; position: absolute; top: 77.5vh; left: 48vw;">
+            <button style="color: black; background-color: skyblue; padding: 10px 10px 10px 10px; border-radius: 15px; font-size: large; border-style: none;"><a href="Menu.html" style="color: black; text-decoration: none;">Menu</a></button>
+        </div>
 
-    <div style="display: flex; justify-content: space-between;background-color: #FFFDD0;padding: 20px;text-align: center;">
-        <h1>About a Restaurant</h1>
- </div>
+        <div style="position: relative; display: flex; height: 15vh; width: 100vw; justify-content: space-around; padding-top: 15px;">
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2024/11/DSC03003-removebg-preview-e1730719169159.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/10-removebg-preview.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/zafrani_sarbat1_90-removebg-preview.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/1-removebg-preview.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/24-scaled-removebg-preview-e1739271667151.png" alt="" height="100%" width="100%"></div>
+            <div><img src="https://sultansdinebd.com/wp-content/uploads/2025/02/26-removebg-preview.png" alt="" height="100%" width="100%"></div>
 
-
-<section>
-    <p>
-        A restaurant is a business that prepares and serves food and beverages to customers in exchange for money.
-        Meals are typically served and consumed on the premises, but many restaurants also offer take-out and delivery services.
-        The primary goal of a restaurant is to provide a satisfying dining experience through quality food, ambiance, and service.
-    </p>
-</section>
-
-<section>
-    <h2>Types of Restaurants</h2>
-    <ul>
-        <li><strong>Fine Dining:</strong> Offers high-end food, a formal atmosphere, and professional service.</li>
-        <li><strong>Casual Dining:</strong> More relaxed than fine dining, often family-friendly with a broad menu.</li>
-        <li><strong>Fast Food:</strong> Known for quick service, limited menu items, and affordability.</li>
-        <li><strong>Cafés and Coffee Shops:</strong> Focus on light snacks, coffee, and informal seating.</li>
-        <li><strong>Buffets:</strong> Customers serve themselves from a variety of dishes for a fixed price.</li>
-        <li><strong>Food Trucks:</strong> Mobile food vendors that offer quick meals at different locations.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Common Features</h2>
-    <ul>
-        <li><strong>Menu:</strong> A list of dishes and drinks offered, often with prices and descriptions.</li>
-        <li><strong>Kitchen:</strong> The area where food is prepared by chefs and kitchen staff.</li>
-        <li><strong>Dining Area:</strong> The seating space where customers eat, often designed for comfort and atmosphere.</li>
-        <li><strong>Staff:</strong> Includes chefs, waiters, managers, cleaners, and hosts—all working together to provide a good customer experience.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Modern Trends</h2>
-    <ul>
-        <li><strong>Online Ordering & Delivery:</strong> Apps like Swiggy, Zomato, and Uber Eats have revolutionized food access.</li>
-        <li><strong>Sustainability:</strong> Use of local ingredients, eco-friendly packaging, and minimizing food waste.</li>
-        <li><strong>Themed Restaurants:</strong> Unique concepts based on culture, movies, or historical eras to attract niche audiences.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Importance in Society</h2>
-    <p>
-        Restaurants are not just places to eat—they are centers of social interaction, cultural exchange, and economic activity.
-        They offer employment opportunities, support local farmers and suppliers, and often act as landmarks in their communities.
-    </p>
-</section>
-
+    </section>
 </body>
 </html>
-
-
-
-
-
-
-
-
-<!-- 
-<header style="display: flex; justify-content: space-between;">
-    <h1>About a Restaurant</h1>
-    <button class="btn btn-warning" style="justify-content: end;">Home</button>
-</header>
- -->
